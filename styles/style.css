@@ -1,0 +1,81 @@
+:root {
+    --cor-fundo: rgb(255, 240, 250);
+    --cor-fundo2: rgb(255, 223, 244);
+    --cor-forms: rgb(255, 182, 232);
+    --cor-texto: rgb(146, 0, 100);
+    --cor-erro: #7e0000;
+    --cor-sucesso: #b7ff8e;
+}
+
+* {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 5%;
+}
+
+main {
+    background-color: var(--cor-fundo2);
+
+    padding: 3%;
+    gap: 1%;
+
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    gap: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+ 
+}
+
+#login-form input {
+    padding: 5px;
+    border: solid 1px var(--cor-texto);
+}
+    
+#login-form button {
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+
+    background-color: var(--cor-texto);
+    color: var( --cor-fundo);
+}
+
+#login-form button:hover {
+    background-color: rgb(120, 0, 80);
+}
+
+.toggle {
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+
+    color: var(--cor-texto);
+}
+
+.erro {
+    color: var(--cor-erro);
+
+    font-size: 12px;
+    text-align: center;
+}
+
+.sucesso {
+    color: var(--cor-sucesso);
+
+    font-size: 12px;
+    text-align: center;
+}
