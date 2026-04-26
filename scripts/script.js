@@ -1,6 +1,8 @@
 let cadastro = false;
 
-document.getElementById("toggle").onclick = () => {
+document.getElementById("toggle").onclick = (e) => {
+
+    e.preventDefault();
 
     cadastro = !cadastro;
 
@@ -12,7 +14,7 @@ document.getElementById("toggle").onclick = () => {
     document.getElementById("mensagem").innerHTML = "";
 }
 
-document.getElementById("form").onsubmit = (e) => {
+document.getElementById("login-form").onsubmit = (e) => {
 
     e.preventDefault(); 
 
